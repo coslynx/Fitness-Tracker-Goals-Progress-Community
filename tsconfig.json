@@ -1,0 +1,67 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    "jsxImportSource": "react",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "incremental": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "types": [
+      "node",
+      "jest",
+      "next",
+      "next-auth",
+      "react",
+      "react-dom",
+      "zustand",
+      "chart.js",
+      "react-chartjs-2",
+      "axios",
+      "next-auth/providers/google"
+    ],
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    "types": [
+      "node",
+      "jest",
+      "next",
+      "next-auth",
+      "react",
+      "react-dom",
+      "zustand",
+      "chart.js",
+      "react-chartjs-2",
+      "axios",
+      "next-auth/providers/google"
+    ]
+  },
+  "include": [
+    "src/**/*",
+    "next.config.js",
+    "pages/**/*",
+    "components/**/*",
+    "hooks/**/*",
+    "utils/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
