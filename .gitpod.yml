@@ -1,0 +1,18 @@
+image: node:18-alpine
+tasks:
+  - init: yarn install
+    command: yarn install
+  - build: yarn build
+    command: yarn build
+  - start: yarn start
+    command: yarn start
+  - test: yarn test
+    command: yarn test
+  - lint: yarn lint
+    command: yarn lint
+  - format: yarn format
+    command: yarn format
+ports:
+  - port: 3000
+    onOpen: open-browser
+    label: 'Fitness Tracker'
