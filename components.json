@@ -1,0 +1,288 @@
+{
+  "components": [
+    {
+      "name": "Logo",
+      "path": "src/presentation/components/logo.tsx",
+      "description": "Renders the Fitness Tracker logo.",
+      "dependencies": [
+        "react"
+      ],
+      "usage": [
+        "Used in the Header component to display the logo."
+      ]
+    },
+    {
+      "name": "NewButton",
+      "path": "src/presentation/components/new.tsx",
+      "description": "Renders the \"New\" button, used to trigger goal creation.",
+      "dependencies": [
+        "react",
+        "next/link"
+      ],
+      "usage": [
+        "Used in the Header component to provide a link to the goal creation page."
+      ]
+    },
+    {
+      "name": "Header",
+      "path": "src/presentation/components/layout/Header.tsx",
+      "description": "Renders the application header, including the logo, navigation, and \"New\" button.",
+      "dependencies": [
+        "react",
+        "next/link",
+        "presentation/components/logo.tsx",
+        "presentation/components/new.tsx"
+      ],
+      "usage": [
+        "Used in the Layout component to display the header for all pages."
+      ]
+    },
+    {
+      "name": "Footer",
+      "path": "src/presentation/components/layout/Footer.tsx",
+      "description": "Renders the application footer, containing copyright information and legal links.",
+      "dependencies": [
+        "react"
+      ],
+      "usage": [
+        "Used in the Layout component to display the footer for all pages."
+      ]
+    },
+    {
+      "name": "Sidebar",
+      "path": "src/presentation/components/layout/Sidebar.tsx",
+      "description": "Renders the navigation sidebar, displaying links to various app sections.",
+      "dependencies": [
+        "react",
+        "next/link"
+      ],
+      "usage": [
+        "Used in the Layout component to display the sidebar for all pages."
+      ]
+    },
+    {
+      "name": "Layout",
+      "path": "src/presentation/components/layout/Layout.tsx",
+      "description": "Defines the main layout structure of the application, including header, sidebar, and footer.",
+      "dependencies": [
+        "react",
+        "presentation/components/layout/Header.tsx",
+        "presentation/components/layout/Footer.tsx",
+        "presentation/components/layout/Sidebar.tsx"
+      ],
+      "usage": [
+        "Used by all pages to provide a consistent layout."
+      ]
+    },
+    {
+      "name": "Button",
+      "path": "src/presentation/components/ui/Button.tsx",
+      "description": "Renders a generic button with customizable text and styling.",
+      "dependencies": [
+        "react"
+      ],
+      "usage": [
+        "Used throughout the application for button elements."
+      ]
+    },
+    {
+      "name": "Card",
+      "path": "src/presentation/components/ui/Card.tsx",
+      "description": "Renders a card component for displaying content in a visually distinct container.",
+      "dependencies": [
+        "react"
+      ],
+      "usage": [
+        "Used throughout the application for displaying content cards."
+      ]
+    },
+    {
+      "name": "Modal",
+      "path": "src/presentation/components/ui/Modal.tsx",
+      "description": "Renders a modal component for displaying dialogs or pop-ups.",
+      "dependencies": [
+        "react"
+      ],
+      "usage": [
+        "Used throughout the application for displaying modals."
+      ]
+    },
+    {
+      "name": "Input",
+      "path": "src/presentation/components/ui/Input.tsx",
+      "description": "Renders a text input field component.",
+      "dependencies": [
+        "react"
+      ],
+      "usage": [
+        "Used throughout the application for user input."
+      ]
+    },
+    {
+      "name": "Select",
+      "path": "src/presentation/components/ui/Select.tsx",
+      "description": "Renders a dropdown menu component.",
+      "dependencies": [
+        "react"
+      ],
+      "usage": [
+        "Used throughout the application for dropdown menus."
+      ]
+    },
+    {
+      "name": "Spinner",
+      "path": "src/presentation/components/ui/Spinner.tsx",
+      "description": "Renders a spinner component, typically used to indicate loading states.",
+      "dependencies": [
+        "react"
+      ],
+      "usage": [
+        "Used throughout the application for loading states."
+      ]
+    },
+    {
+      "name": "LoginForm",
+      "path": "src/presentation/components/features/auth/LoginForm.tsx",
+      "description": "Renders the login form for user authentication.",
+      "dependencies": [
+        "react",
+        "lib/api/client.ts"
+      ],
+      "usage": [
+        "Used on the login page to allow users to log in."
+      ]
+    },
+    {
+      "name": "SignupForm",
+      "path": "src/presentation/components/features/auth/SignupForm.tsx",
+      "description": "Renders the signup form for user registration.",
+      "dependencies": [
+        "react",
+        "lib/api/client.ts"
+      ],
+      "usage": [
+        "Used on the signup page to allow users to register."
+      ]
+    },
+    {
+      "name": "GoalCard",
+      "path": "src/presentation/components/features/goals/GoalCard.tsx",
+      "description": "Renders a card component to display a single goal.",
+      "dependencies": [
+        "react",
+        "lib/api/client.ts",
+        "presentation/components/ui/Button.tsx"
+      ],
+      "usage": [
+        "Used on the Goals page to display individual goals."
+      ]
+    },
+    {
+      "name": "GoalForm",
+      "path": "src/presentation/components/features/goals/GoalForm.tsx",
+      "description": "Renders a form for creating or editing goals.",
+      "dependencies": [
+        "react",
+        "lib/api/client.ts",
+        "presentation/components/ui/Input.tsx",
+        "presentation/components/ui/Select.tsx"
+      ],
+      "usage": [
+        "Used on the Goals page for both creating new goals and editing existing ones."
+      ]
+    },
+    {
+      "name": "GoalList",
+      "path": "src/presentation/components/features/goals/GoalList.tsx",
+      "description": "Renders a list of goals, using GoalCard components to display them.",
+      "dependencies": [
+        "react",
+        "presentation/components/features/goals/GoalCard.tsx"
+      ],
+      "usage": [
+        "Used on the Goals page to display the list of goals for the user."
+      ]
+    },
+    {
+      "name": "ProgressChart",
+      "path": "src/presentation/components/features/progress/ProgressChart.tsx",
+      "description": "Renders a chart using Chart.js to visualize progress towards a goal.",
+      "dependencies": [
+        "react",
+        "chart.js",
+        "react-chartjs-2"
+      ],
+      "usage": [
+        "Used on the Progress page to display charts showing progress data for goals."
+      ]
+    },
+    {
+      "name": "ProgressLog",
+      "path": "src/presentation/components/features/progress/ProgressLog.tsx",
+      "description": "Displays a list of progress entries for a goal, showing dates, progress values, and timestamps.",
+      "dependencies": [
+        "react"
+      ],
+      "usage": [
+        "Used on the Progress page to display a detailed log of progress entries for a goal."
+      ]
+    },
+    {
+      "name": "DashboardStats",
+      "path": "src/presentation/components/features/dashboard/DashboardStats.tsx",
+      "description": "Renders key dashboard metrics, such as overall progress, active goals, and recent activity.",
+      "dependencies": [
+        "react"
+      ],
+      "usage": [
+        "Used on the Dashboard page to display a summary of the user's fitness progress."
+      ]
+    },
+    {
+      "name": "RecentActivity",
+      "path": "src/presentation/components/features/dashboard/RecentActivity.tsx",
+      "description": "Displays a list of recent user activities (e.g., exercise, sleep).",
+      "dependencies": [
+        "react"
+      ],
+      "usage": [
+        "Used on the Dashboard page to show the user's recent activity."
+      ]
+    },
+    {
+      "name": "CommunityFeed",
+      "path": "src/presentation/components/features/community/CommunityFeed.tsx",
+      "description": "Renders the community feed, displaying recent user activity and allowing for interactions.",
+      "dependencies": [
+        "react",
+        "lib/api/client.ts"
+      ],
+      "usage": [
+        "Used on the Community page to display the social feed of user activities."
+      ]
+    },
+    {
+      "name": "UserProfile",
+      "path": "src/presentation/components/features/community/UserProfile.tsx",
+      "description": "Renders a user's profile, displaying information and potentially allowing for interactions.",
+      "dependencies": [
+        "react",
+        "lib/api/client.ts"
+      ],
+      "usage": [
+        "Used on the Community page to display user profiles."
+      ]
+    },
+    {
+      "name": "LandingPage",
+      "path": "src/presentation/components/landing/main.tsx",
+      "description": "Renders the main content for the landing page.",
+      "dependencies": [
+        "react"
+      ],
+      "usage": [
+        "Used as the main content for the root page of the application."
+      ]
+    }
+  ]
+}
