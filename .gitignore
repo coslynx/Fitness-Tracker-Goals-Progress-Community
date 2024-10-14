@@ -1,0 +1,80 @@
+# Next.js configuration files
+next.config.js
+.next
+
+# Build outputs
+out
+dist
+
+# Temporary files
+.tmp
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+npm-debug.log*
+
+# Editor temporary files
+.idea
+*.suo
+*.sln
+*.user
+
+# Visual Studio Code
+.vscode
+
+# JetBrains IDEs
+*.iml
+*.ipr
+*.iws
+
+# Sublime Text
+.sublime-project
+.sublime-workspace
+
+# Atom
+.atom
+
+# Vim
+.swp
+.swo
+.swn
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Git
+.git
+.gitignore
+
+# Docker
+Dockerfile
+docker-compose.yml
+
+# Testing
+jest.config.js
+coverage
+
+# Linting and Formatting
+.eslintrc.js
+.prettierrc
+
+# Documentation
+README.md
+docs
+
+# Dependencies
+node_modules
+
+# Local Development
+.env.local
+
+# Deployment Configuration
+vercel.json
